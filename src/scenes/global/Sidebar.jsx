@@ -10,13 +10,12 @@ import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
 import ReceiptOutlinedIcon from "@mui/icons-material/ReceiptOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import CalendarTodayOutlinedIcon from "@mui/icons-material/CalendarTodayOutlined";
-import HelpOutlinedIcon from "@mui/icons-material/HelpOutlined";
+import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 import BarChartOutlinedIcon from "@mui/icons-material/BarChartOutlined";
 import PieChartOutlineOutlinedIcon from "@mui/icons-material/PieChartOutlineOutlined";
 import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
-import { color } from "@mui/system";
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
@@ -24,7 +23,7 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
   return (
     <MenuItem
       active={selected === title}
-      style={{ color: colors.grey[100] }}
+      style={{color: colors.grey[100]}}
       onClick={() => setSelected(title)}
       icon={icon}
     >
@@ -52,7 +51,7 @@ const Sidebar = () => {
         "& .pro-inner-item": {
           padding: "5px 35px 5px 20px !important",
         },
-        " & .pro-inner-item:hover": {
+        "& .pro-inner-item:hover": {
           color: "#868dfb !important",
         },
         "& .pro-menu-item.active": {
@@ -87,6 +86,7 @@ const Sidebar = () => {
               </Box>
             )}
           </MenuItem>
+
           {/* User */}
           {!isCollapsed && (
             <Box mb="25px">
@@ -101,16 +101,15 @@ const Sidebar = () => {
               </Box>
               <Box textAlign="center">
                 <Typography
-                  varient="h2"
+                  variant="h2"
                   color={colors.grey[100]}
                   fontWeight="bold"
                   sx={{ m: "10px 0 0 0" }}
                 >
-                  {" "}
                   Plain Jane
                 </Typography>
-                <Typography varient="h5" color={color.greenAccent[500]}>
-                  VP Fancy admin
+                <Typography variant="h5" color={colors.greenAccent[500]}>
+                  VP Admin
                 </Typography>
               </Box>
             </Box>
@@ -129,7 +128,7 @@ const Sidebar = () => {
             <Typography
               variant="h6"
               color={colors.grey[300]}
-              sx={{ m: "15px 0 5px 20px " }}
+              sx={{ m: "15px 0 5px 20px" }}
             >
               Data
             </Typography>
@@ -154,10 +153,11 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
+
             <Typography
               variant="h6"
               color={colors.grey[300]}
-              sx={{ m: "15px 0 5px 20px " }}
+              sx={{ m: "15px 0 5px 20px" }}
             >
               Pages
             </Typography>
@@ -178,14 +178,15 @@ const Sidebar = () => {
             <Item
               title="FAQ"
               to="/faq"
-              icon={<HelpOutlinedIcon />}
+              icon={<HelpOutlineOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
+
             <Typography
               variant="h6"
               color={colors.grey[300]}
-              sx={{ m: "15px 0 5px 20px " }}
+              sx={{ m: "15px 0 5px 20px" }}
             >
               Charts
             </Typography>
