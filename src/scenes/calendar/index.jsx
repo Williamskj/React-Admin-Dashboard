@@ -1,5 +1,6 @@
 import { useState } from "react";
-import FullCalendar, { formatDate } from "@fullcalendar/react";
+import FullCalendar from "@fullcalendar/react";
+import { formatDate } from "@fullcalendar/core"
 import dayGridPlugin from "@fullcalendar/daygrid";
 import timeGridPlugin from "@fullcalendar/timegrid";
 import interactionPlugin from "@fullcalendar/interaction";
@@ -84,7 +85,7 @@ const Calendar = () => {
           </List>
         </Box>
         {/* Calendar */}
-        {/* <Box flex="1 1 100%" ml="15px">
+        <Box flex="1 1 100%" ml="15px">
           <FullCalendar
             height="75vh"
             plugins={[
@@ -94,9 +95,9 @@ const Calendar = () => {
               listPlugin,
             ]}
             headerToolbar={{
-              left: "prev, next today",
+              left: "prev,next today",
               center: "title",
-              right: "dayGridMonth, timeGridWeek, timeGridDay, listMonth",
+              right: "dayGridMonth,timeGridWeek,timeGridDay,listMonth",
             }}
             initialView="dayGridMonth"
             editable={true}
@@ -111,7 +112,7 @@ const Calendar = () => {
               { id: "4567", title: "Timed event", date: "2023-02-28" },
             ]}
           />
-        </Box> */}
+        </Box>
       </Box>
     </Box>
   );
