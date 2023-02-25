@@ -66,6 +66,20 @@ const FAQ = () => {
                 </Typography>
             </AccordionDetails>
         </Accordion>
+        <Accordion defaultExpanded>
+            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                <Typography color={colors.greenAccent[500]} variant="h5">
+                    Why does the data appear to be nonsensical?
+                </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+                <Typography>
+                    The data has no relation to any actual data. It is all Mock,
+                    and most of the code for the charts was copied over directly from
+                    Nivo Charts.
+                </Typography>
+            </AccordionDetails>
+        </Accordion>
     </Box>
 }
 
