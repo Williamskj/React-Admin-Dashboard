@@ -158,7 +158,7 @@ const Dashboard = () => {
             </Box>
           </Box>
 
-          <Box height="250px" mt="-20px 0 0 0">
+          <Box height="250px" m="-20px 0 0 0">
             <LineChart isDashboard={true} />
           </Box>
         </Box>
@@ -183,7 +183,7 @@ const Dashboard = () => {
           </Box>
           {mockTransactions.map((transaction, i) => (
             <Box
-              Key={`${transaction.txId}-${i}`}
+              key={`${transaction.txId}-${i}`}
               display="flex"
               justifyContent="space-between"
               alignItems="center"
