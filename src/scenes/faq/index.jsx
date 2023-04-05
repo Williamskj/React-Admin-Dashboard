@@ -57,13 +57,12 @@ const FAQ = () => {
       <Accordion defaultExpanded>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography color={colors.greenAccent[500]} variant="h5">
-            Why do you use an Image of Mark Zuckerburg for your example profile
-            image?
+            Why does your profile-user img appear to be blank?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            I needed an image, and I thought it was funny.
+            It was originally meant to be an image of Mark Zuckerberg, but I decided not to.
           </Typography>
         </AccordionDetails>
       </Accordion>
