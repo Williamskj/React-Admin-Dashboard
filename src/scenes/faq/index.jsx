@@ -80,6 +80,21 @@ const FAQ = () => {
             to them.
           </Typography>
         </AccordionDetails>
+        <Accordion defaultExpanded>
+        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+          <Typography color={colors.greenAccent[500]} variant="h5">
+            Is there any issues with the application that I should be aware of?
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            The only problem you may expect to see, aside from the profile image, is
+            how the Github Pages generates the URL. That may mean that reloading the
+            page may lead to a 404. Simply return to the page that you started on
+            when opening the application.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
       </Accordion>
     </Box>
   );
