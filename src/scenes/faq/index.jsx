@@ -62,7 +62,8 @@ const FAQ = () => {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            It was originally meant to be an image of Mark Zuckerberg, but I decided not to.
+            It was originally meant to be an image of Mark Zuckerberg, but a problem lead to it not
+            displaying in the application.
           </Typography>
         </AccordionDetails>
       </Accordion>
